@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ 
+    <div class="kotak">
+            <div class="baris">
+                    <input type="text" id="angka" class="ktk">
+                   <br>
+                    <input type="text" id="hasil" class="ktk" style="border-right:none;"> 
+                    <br>
+                </div>
+        <div class="baris">
+            <button onclick="document.getElementById('angka').value='0'">c</button>
+            <button onclick="document.getElementById('angka').value='0'">---</button>
+            <button onclick="document.getElementById('angka').value+='*'" id="tambah">*</button>
+            <button onclick="document.getElementById('angka').value+='/'" id="tambah">/</button>
+        </div>
+        <div class="baris">
+            <button onclick="document.getElementById('angka').value+='1'">
+                1
+            </button>
+            <button onclick="document.getElementById('angka').value+='2'">
+                2
+            </button>
+            <button onclick="document.getElementById('angka').value+='3'">
+                3
+            </button>
+            <button onclick="document.getElementById('angka').value+='+'" id="tambah">+</button>
+        </div>
+        <div class="baris">
+            <button onclick="document.getElementById('angka').value+='4'">
+                4
+            </button>
+            <button onclick="document.getElementById('angka').value+='5'">
+                5
+            </button>
+            <button onclick="document.getElementById('angka').value+='6'">
+                6
+            </button>
+            <button onclick="document.getElementById('angka').value+='-'" id="tambah">-</button>
+        </div>
+        <div class="baris">
+            <button onclick="document.getElementById('angka').value+='7'">
+                7
+            </button>
+            <button onclick="document.getElementById('angka').value+='8'">
+                8
+            </button>
+            <button onclick="document.getElementById('angka').value+='9'">
+                9
+            </button>
+            <button onclick="document.getElementById('angka').value+='0'">
+                0
+            </button>
+        </div>
+        <div class="baris">
+            <button onclick="document.getElementById('hasil').value=eval(document.getElementById('angka').value)">=</button>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- <button onclick="eval(document.getElementById('angka')+ document.getElementById('angka'))"></button>
+    <input type="text" id="huruf"> -->
+    <script>
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
